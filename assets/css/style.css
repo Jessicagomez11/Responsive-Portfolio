@@ -1,0 +1,267 @@
+/*this controls the html document body*/
+body {
+    background-image: url(../images/leaves.jpg);
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+    background: size 100%;
+    font-family: 'Coming Soon', cursive;
+    
+}
+/* this conrols the h1 tag*/
+h1{
+    position: relative;
+}
+
+/* this controls the section behind the name at the top*/
+header{
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-bottom:  #cccccc solid;
+    box-align: center;
+    width:100%;
+    height: 70px;
+}
+    
+.tipitytop{
+        width: 960px;
+        margin: 0 auto;       
+}  
+    
+
+#links{
+   float: right;
+   margin-top: 10px;
+  }
+
+ /*this controls the links*/
+ a {
+    color: #284632;
+    margin: 10px;
+    font-size: 20px;
+    opacity: .8;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #777777;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 8px;
+    margin-top: 3px;
+}
+
+a:visited{
+    color: #a58135;
+}
+
+/*this controls the way the name looks at the top of the page*/
+.name {
+    background-color: #284632;
+    color:#ffffff;
+    width: 400px; /* changed this to px instead of %,hopefully this gets rid of it changing widths*/
+    padding: 10px ;
+    margin: 0;
+    position: relative;  /*gotta get these into the header*/ 
+    float: left;
+    font-size: 35px;
+    box-align: center;
+    text-align: center;
+    letter-spacing: 10px; 
+    
+    /* margin-right: 400px;     */
+}
+
+
+  
+ #container{
+    margin: 0 auto;
+    width: 960px;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    box-align: center;
+    position: relative;
+    overflow: auto;  
+    padding-bottom: 25px;
+} 
+
+
+
+/* this controls the about me, portfolio, and contact headings*/
+.sectionTitle {
+    color: #284632;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    border-bottom: solid 5px #dddddd;
+    letter-spacing: 10px; 
+    margin-left: 20px;
+    width: 890px;
+}
+
+
+/*this is for the about me page */
+ /* bio image*/
+#pic {
+    width:260px;
+    float:left;
+    margin: 25px 50px;
+}
+
+
+
+/*what the writing looks like*/
+ p{
+    color: #777777;
+    margin-top: -40px;
+    letter-spacing: 2px; 
+    padding: 10px 50px;
+ }
+
+/* this is for the profile page */
+ .frame{
+    height: 250px;
+    width: 300px;
+    float: left;
+    margin: 20px 40px 20px 40px;
+    display: flex;
+ }
+
+ .frame:hover {
+     opacity:.8;
+ }
+
+.profilePicture{
+    height:250px;
+    width: 300px;
+    margin: 25px;
+    margin-left: 30px;
+    z-index: 2;
+    margin: auto;
+}
+
+h2{
+    background: #284632;
+    color: #ffffff;
+    width: 300px;
+    padding-top: 15px;
+    text-align: center;
+    float: left;
+    z-index: 3;
+    margin-top: 150px;
+    margin-left:-300px;
+}
+
+
+/* this is for the contact page */
+button{
+    background-color: #284632;
+    color: #ffffff;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    opacity: 1;
+}
+
+button:hover{
+    opacity: .8;   
+}
+
+
+.inputBoxes{
+    margin-left: 20px;
+    width: 910px;
+    font-size: 15px;
+    margin-bottom: 40px;
+    color: #a58135;
+}
+
+h4{
+    margin-left: 50px;
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: -20px;
+    margin-bottom: -7px;
+}
+ /*footer situation*/
+ #footer{
+    background-color: #284632;
+    height: 100px;
+    border-top: 5px solid #777777;  
+    width: 100%;
+}
+
+@media(max-width:980px){
+    #links{
+       float: right;
+   
+   }
+   .name{
+       background-color: 
+   }
+   #container{
+       width: 90%;
+   }
+   .sectionTitle{
+       width: 90%;
+       
+   }
+   p{ 
+       letter-spacing: 0px;
+       text-align: justify;
+   }
+   .frame{
+       margin-left: 30px;
+   }
+   .inputBoxes{
+       width:93%;
+   }
+   }
+
+
+@media(max-width:768px){
+
+header{
+    width: 100%;
+    position: static;
+}
+#container{
+    width: 90%;
+}
+#links{
+    float: left;
+  
+}
+
+@media (max-width: 640px){
+h1 , {
+    width: 100%; 
+}
+#links{
+    width: 100%;
+    float: left;
+    margin-left: 55px;
+}
+header{
+    position: static;
+    height: 140px;
+}
+#container{
+    width: 90%;
+}
+.sectionTitle{
+    width: 80%;
+    text-align: center;
+}
+p{ 
+    letter-spacing: 0px;
+    text-align: justify;
+}
+.frame{
+    margin-left: 30px;
+}
+.inputBoxes{
+    width:87%;
+}
+}
