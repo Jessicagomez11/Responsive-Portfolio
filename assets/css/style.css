@@ -19,7 +19,7 @@ header{
     background-color: #ffffff;
     border-bottom:  #cccccc solid;
     box-align: center;
-    width:100%;
+    width:100vw;
     height: 70px;
 }
     
@@ -61,7 +61,8 @@ a:visited{
     background-color: #284632;
     color:#ffffff;
     width: 400px; /* changed this to px instead of %,hopefully this gets rid of it changing widths*/
-    padding: 10px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: 0;
     position: relative;  /*gotta get these into the header*/ 
     float: left;
@@ -170,11 +171,12 @@ button:hover{
 
 
 .inputBoxes{
-    margin-left: 20px;
-    width: 910px;
+    margin-left: 40px;
+    width: 865px;
     font-size: 15px;
     margin-bottom: 40px;
     color: #a58135;
+    align-items: center;
 }
 
 h4{
@@ -201,10 +203,10 @@ h4{
        background-color: 
    }
    #container{
-       width: 90%;
+       width: 90vw;
    }
    .sectionTitle{
-       width: 90%;
+       width: 90vw;
        
    }
    p{ 
@@ -215,7 +217,7 @@ h4{
        margin-left: 30px;
    }
    .inputBoxes{
-       width:93%;
+       width:80vw;
    }
    }
 
@@ -223,35 +225,37 @@ h4{
 @media(max-width:768px){
 
 header{
-    width: 100%;
-    position: static;
+    width: 100vw;
 }
 #container{
     width: 90%;
 }
 #links{
-    float: left;
-  
+    float: right;
 }
-
+.inputBoxes{
+    width: 80vw;
+}
 @media (max-width: 640px){
-h1 , {
-    width: 100%; 
+.name{
+    width: 100vw;
+    text-align: center;
 }
 #links{
-    width: 100%;
+    width: 100vw;
     float: left;
-    margin-left: 55px;
+    text-align: center;
 }
 header{
     position: static;
     height: 140px;
+    width: 100vw;
 }
 #container{
-    width: 90%;
+    width: 90vw;
 }
 .sectionTitle{
-    width: 80%;
+    width: 80vw;
     text-align: center;
 }
 p{ 
@@ -262,6 +266,8 @@ p{
     margin-left: 30px;
 }
 .inputBoxes{
-    width:87%;
+    width:78vw;
+    box-align: center;
+    margin-left: 30px;
 }
 }
