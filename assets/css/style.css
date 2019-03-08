@@ -478,8 +478,7 @@ h4{
        width: 90vw;
    }
    .sectionTitle{
-       width: 90vw;
-       
+       width: 80%;
    }
    p{ 
        letter-spacing: 0px;
@@ -489,7 +488,7 @@ h4{
        margin-left: 30px;
    }
    .inputBoxes{
-       width:80vw;
+       width:80%;
    }
    }
 
@@ -505,8 +504,12 @@ header{
 #links{
     float: right;
 }
+.sectionTitle{
+    width: 82%;
+}
 .inputBoxes{
     width: 80vw;
+}
 }
 @media  (max-width: 640px){
 .name{
@@ -530,8 +533,8 @@ header{
     width: 90%;
 }
 .sectionTitle{
-    width: 80%;
-    text-align: center;
+    width: 82%;
+   
 }
 p{ 
     letter-spacing: 0px;
@@ -544,6 +547,7 @@ p{
     width:78vw;
     box-align: center;
     margin-left: 30px;
+    margin-right: 50px;
 }
 }
 @
